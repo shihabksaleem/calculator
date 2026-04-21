@@ -120,10 +120,10 @@ class HistoryView extends GetView<CalculatorController> {
         controller.deleteHistoryItem(originalIndex);
       },
       child: Container(
-        color: isAlternate 
-            ? (Theme.of(context).brightness == Brightness.dark 
-                ? Colors.white.withOpacity(0.03) 
-                : Colors.black.withOpacity(0.03))
+        color: isAlternate
+            ? (Theme.of(context).brightness == Brightness.dark
+                  ? Colors.white.withOpacity(0.03)
+                  : Colors.black.withOpacity(0.03))
             : Colors.transparent,
         child: InkWell(
           onTap: () => controller.reuseHistoryItem(item),

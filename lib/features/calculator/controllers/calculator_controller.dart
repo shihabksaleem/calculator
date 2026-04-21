@@ -20,16 +20,16 @@ class CalculatorController extends GetxController {
     super.onInit();
     // Load persisted settings from StorageService
     precision.value = StorageService.getPrecision();
-    
+
     // Load history and filter out any "Undefined" results that might have been stored previously
     final storedHistory = StorageService.getHistory();
     history.assignAll(storedHistory.where((item) => item.result != "Undefined"));
-    
+
     // If we filtered anything, sync back to storage
     if (history.length != storedHistory.length) {
       StorageService.saveHistory(history);
     }
-    
+
     isDarkMode.value = StorageService.isDarkMode();
   }
 

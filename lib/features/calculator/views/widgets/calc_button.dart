@@ -28,7 +28,7 @@ class CalcButton extends StatelessWidget {
 
     // Determine colors based on button type
     if (text == '=') {
-      defaultColor = Colors.transparent; 
+      defaultColor = Colors.transparent;
       defaultTextColor = Colors.white;
     } else if (text == 'AC') {
       defaultColor = isDark ? AppTheme.numberColorDark : AppTheme.numberColorLight;
@@ -62,10 +62,12 @@ class CalcButton extends StatelessWidget {
                   end: Alignment.bottomCenter,
                 )
               : null,
-          border: isDark && !isEquals ? Border.all(
-            color: Colors.white.withOpacity(0.08), // Subtle rim lighting
-            width: 1.5,
-          ) : null,
+          border: isDark && !isEquals
+              ? Border.all(
+                  color: Colors.white.withOpacity(0.08), // Subtle rim lighting
+                  width: 1.5,
+                )
+              : null,
           boxShadow: [
             BoxShadow(
               color: isDark ? Colors.white.withOpacity(0.05) : Colors.black.withOpacity(0.1),

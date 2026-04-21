@@ -26,24 +26,18 @@ class SettingsBottomSheet extends GetView<CalculatorController> {
             height: 4,
             margin: const EdgeInsets.only(bottom: 20),
             decoration: BoxDecoration(
-              color: Colors.grey.withOpacity(0.3),
+              color: Colors.grey.withValues(alpha: 0.3),
               borderRadius: BorderRadius.circular(2),
             ),
           ),
-          const Text(
-            'Settings',
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-          ),
+          const Text('Settings', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
           const SizedBox(height: 20),
           const PrecisionSelector(),
           const SizedBox(height: 10),
           const Divider(),
           const SizedBox(height: 10),
           // Theme explanation or other settings can go here
-          const Text(
-            "Decimal Precision",
-            style: TextStyle(color: Colors.grey, fontSize: 13),
-          ),
+          const Text("Decimal Precision", style: TextStyle(color: Colors.grey, fontSize: 13)),
         ],
       ),
     );

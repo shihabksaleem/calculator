@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 /// and high-fidelity UI aesthetics.
 class AppTheme {
   // Dark Mode Palette (High Contrast)
-  static const Color darkBg = Color(0xFF0E0E10); 
-  static const Color darkSurface = Color(0xFF17171C); 
+  static const Color darkBg = Color(0xFF0E0E10);
+  static const Color darkSurface = Color(0xFF17171C);
   static const Color numberColorDark = Color(0xFF25252B); // Lighter for elevation
   static const Color operatorColorDark = Color(0xFF323344); // Brightened for contrast
   static const Color actionColorDark = Color(0xFF4A4B5A); // Brightened
@@ -18,7 +18,7 @@ class AppTheme {
   static const Color actionColorLight = Color(0xFFE5E5E5);
 
   // Signature Action Colors
-  static const Color acColor = Color(0xFFFF2D55); // Destructive Red/Pink for All Clear
+  static const Color acColor = Color(0xFFFF2D55); //  Red/Pink for All Clear
   static const Color cColor = Color(0xFF637381); // Muted Slate for Clear Entry
   static const Color signColor = Color(0xFF637381); // Slate gray for standard operations
 

@@ -1,7 +1,7 @@
 import 'package:calculator/features/calculator/controllers/calculator_controller.dart';
 import 'package:calculator/features/calculator/views/widgets/calc_button.dart';
 import 'package:calculator/features/calculator/views/history_view.dart';
-import 'package:calculator/features/calculator/views/widgets/history_bottom_sheet.dart';
+import 'package:calculator/features/calculator/views/widgets/settings_bottom_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
